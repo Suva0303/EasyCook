@@ -1,17 +1,20 @@
 ﻿@model IEnumerable<EasyCook.Models.Contact>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Отзыв";
 }
 
-<h1>Index</h1>
+<h1>Оставьте свой отзыв</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Добавить новый отзыв</a>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Surname)
             </th>
@@ -30,6 +33,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+             <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Surname)
             </td>
@@ -43,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.Message)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Name">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Name">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Name">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Name">Редактировать</a> |
+                <a asp-action="Details" asp-route-id="@item.Name">Подробнее</a> |
+                <a asp-action="Delete" asp-route-id="@item.Name">Удалить</a>
             </td>
         </tr>
 }

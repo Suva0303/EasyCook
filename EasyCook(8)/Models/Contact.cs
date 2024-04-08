@@ -6,23 +6,23 @@ namespace EasyCook.Models
     {
         [Key]
 
-        [Display(Name="Введите имя")]
+        [Display(Name=" Имя")]
         [Required (ErrorMessage="Вам нужно ввести имя")]
         public string Name { get; set; }
 
-        [Display(Name = "Введите фамилия")]
+        [Display(Name = " Фамилия")]
         [Required(ErrorMessage = "Вам нужно ввести фамилия")]
         public string Surname { get; set; }
 
-        [Display(Name = "Введите возраст")]
+        [Display(Name = " Возраст")]
         [Required(ErrorMessage = "Вам нужно ввести возраст")]
         public int Age { get; set; }
 
-        [Display(Name = "Введите почту")]
+        [Display(Name = " Почта")]
         [Required(ErrorMessage = "Вам нужно ввести почту")]
         public string Email { get; set; }
 
-        [Display(Name = "Введите сообщение")]
+        [Display(Name = " Сообщение")]
         [Required(ErrorMessage = "Вам нужно ввести сообщение")]
         [StringLength(400, ErrorMessage="Текст должен быть менее 30 символов")]
         public string Message { get; set; }
