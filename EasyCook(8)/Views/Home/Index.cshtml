@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Главная страница сайта";
+}
+<h1 class="welcome">Добро пожаловать в<br/> EasyCook</h1>
+<div class="welcome_text">
+    <p>
+        EasyCook ваш личный помощник кулинарии. Просто загрузите фотографию ваших продуктов, и мы подберем для вас идеальные рецепты! Создавайте вкусные блюда вместе с нами!
+    </p>
+</div>
+<div class="image">
+    <img class="image_1" src="~/images/vegets.jpg" alt="Photo" />
+</div>
+
+<div class="form-container">
+    <h2>Загрузить фото</h2>
+    <form action="/UploadPhoto" method="post" enctype="multipart/form-data">
+        <input type="file" name="photo" accept="image/*">
+        <button type="submit">Загрузить фото</button>
+    </form>
+</div>
+
+<form id="ingredientForm">
+    <label for="ingredients">Введите список ингредиентов:</label><br>
+    <textarea id="ingredients" name="ingredients" rows="4" cols="50"></textarea><br>
+    <button type="submit">Отправить</button>
+</form>
+

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #98E0C6;
+    font-family: 'Montserrant', sans-serif;
+}
+
+header {
+    width: 80%;
+    padding: 15px 10%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E0CB99;
+    border-bottom: 2px solid #000;
+}
+
+    header .logo {
+        font-weight: 600;
+        font-size: 25px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a {
+        color: black;
+        text-decoration: none;
+        margin-right: 45px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        header nav a:hover {
+            color: aquamarine;
+        }
+
+main {
+    width: 80%;
+    padding: 15px 10%;
+    margin: 50px 0;
+}
+
+    main label {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+    }
+
+    main input:not([type="submit"]) {
+        width: 90%;
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid silver;
+        outline: none;
+        margin-top: 7px;
+    }
+
+        main input:not([type="submit"]):focus {
+            border: 1px solid #ff0000;
+        }
+
+    main input[type="submit"] {
+        width: 40%;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 0;
+        margin-top: 7px;
+        background: #ffab26;
+        font-weight: bold;
+        color: #833904;
+        cursor: pointer;
+    }
+
+        main input[type="submit"]:hover {
+            background: #546151;
+        }
+
+    main form sapn {
+        color: #ff0000;
+        font-weight: bold;
+        display: block;
+        margin: 5px 0;
+    }
+
+    main .welcome {
+        border: 1px solid #61563C;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        text-shadow: 2px 2px 10px white;
+        margin: 0px 150px;
+    }
+
+    main .welcome_text {
+        margin: 60px auto;
+        width: 500px;
+        text-align: justify;
+        font-size: 21px;
+    }
+
+    main .image {
+    }
+
+    main .image_1 {
+        border-radius: 50px;
+        display: block;
+        margin: 0px auto;
+        width: 700px;
+    }
+
+    main .form-container {
+        max-width: 400px;
+        margin: 60px auto;
+        padding: 20px;
+        background-color: #C0ECD9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main .file-input label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+        main .file-input label:hover {
+            background-color: #77D5B8;
+        }
+
+    main .file-input input {
+        display: none;
+    }
+
+    main .file-input button {
+        display: inline-block;
+        padding: 15px 20px;
+        background-color: #7ACDB0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        main .file-input button:hover {
+            background-color: #77D5B8;
+        }
+
+        main .file-input button:active {
+            background-color: #66C5A7;
+        }
+
+#ingredientForm {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    button[type="submit"]:focus {
+        outline: none;
+    }
+
+footer {
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    color: black;
+    background: #E0CB99;
+    border-bottom: 2px solid #000;
+}
